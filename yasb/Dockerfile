@@ -14,3 +14,6 @@ RUN git config --global user.name "Yasb Docker Image"
 
 # Ajout Yasb
 RUN pip install http://github.com/c4software/YASB/archive/master.zip
+
+RUN mkdir /sources/
+WORKDIR /sources/
