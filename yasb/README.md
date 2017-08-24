@@ -4,4 +4,8 @@ Image docker pour « builder » des sources Yasb
 
 ## Usage
 
-docker run c4software/yasb:latest -v .:/sources/ yasb 
+Monte le dossier courant et « build » le site en question
+
+```
+$ docker run -it -v $(pwd):/sources/ c4software/yasb:latest yasb
+```
